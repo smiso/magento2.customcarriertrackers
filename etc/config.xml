@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * smile solutions Custom Carrier Trackers
+ *
+ * NOTICE OF LICENSE
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @author      Daniel Kradolfer <kra@smilesolutions.ch>
+ * @package     SmileSolutions_CustomCarrierTrackers
+ * @copyright   Copyright (c) 2020 Daniel Kradolfer, smile solutions gmbh <kra@smilesolutions.ch>
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <smiso_carrier_1>
+                <active>1</active>
+                <title>Swiss Post</title>
+                <name>SwissPost</name>
+                <shipping_cost>0</shipping_cost>
+                <sallowspecific>0</sallowspecific>
+                <model>SmileSolutions\CustomCarrierTrackers\Model\CustomCarrierTracker1</model>
+                <tracking_url>https://www.post.ch/swisspost-tracking?formattedParcelCodes={{trackingNumber}}</tracking_url>
+            </smiso_carrier_1>
+            <smiso_carrier_2>
+                <model>SmileSolutions\CustomCarrierTrackers\Model\CustomCarrierTracker2</model>
+            </smiso_carrier_2>
+            <smiso_carrier_3>
+                <model>SmileSolutions\CustomCarrierTrackers\Model\CustomCarrierTracker3</model>
+            </smiso_carrier_3>
+            <smiso_carrier_4>
+                <model>SmileSolutions\CustomCarrierTrackers\Model\CustomCarrierTracker4</model>
+            </smiso_carrier_4>
+            <smiso_carrier_5>
+                <model>SmileSolutions\CustomCarrierTrackers\Model\CustomCarrierTracker5</model>
+            </smiso_carrier_5>
+        </carriers>
+    </default>
+</config>
